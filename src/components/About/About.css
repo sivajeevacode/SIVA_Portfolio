@@ -1,0 +1,153 @@
+.about
+{
+    width: 100%;
+    padding:20px 4%;
+    background-color: blueviolet;
+    
+}
+.about .top
+{
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 90px;
+}
+.about .top h3
+{
+    font-size:30px;
+    position: relative;
+}
+.about .top h3::after
+{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color:#00a5cf;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;   
+    border-radius: 30px;
+}
+.about .top p
+{
+    width: 60%;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+
+
+.about .bottom
+{
+    margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.about .bottom .myself 
+{
+    color: #fff;
+    padding: 10px 0;
+    flex-basis: 60%;
+}
+.myself h3
+{
+    font-size: 25px;
+    
+}
+.myself p
+{
+    font-size: 18px;
+    text-align: justify;
+    width: 80%;
+    line-height: 2em;
+}
+
+.about .bottom .skills
+{
+    flex-basis: 40%;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.skills h3
+{
+    font-size: 25px;
+   
+}
+
+.skills .boxes 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    gap: 40px;
+    margin-top: 30px;
+}
+.boxes .box
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color:rgba(255, 253, 253, 0.3);
+    width: 150px;
+    text-align: center;
+    padding:5px 10px;
+    border-radius: 5px;
+    height: 55px;
+    transition: all 0.2s ease;
+}
+.boxes .box:hover
+{
+    transform: translateY(-2px);
+}
+.boxes .box p
+{
+    font-weight:bold;
+    font-size: 15px;
+}
+
+@media (max-width:800px) {
+    .about
+{
+    width: 100%;
+    padding:20px 3%;
+    background-color: blueviolet;
+    
+}
+.about .bottom
+{
+    margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.myself p
+{
+    font-size: 20px;
+    text-align: justify;
+    width: 100%;
+    line-height: 2em;
+}
+.about .top p
+{
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.about .top
+{
+    margin-top: 70px;
+}
+
+.boxes .box p
+{
+    font-weight:bold;
+    font-size: 17px;
+}
+}
